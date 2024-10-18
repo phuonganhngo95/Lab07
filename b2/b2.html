@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b2.css">
+</head>
+<body>
+    <div id="main">
+        <ul class="cleafix">
+            <li><a href="" id="maudo">Đỏ</a></li>
+            <li><a href="" id="mauxanh">Xanh</a></li>
+            <li><a href="" id="mauvang">Vàng</a></li>
+            <li><a href="" id="maughi">Ghi</a></li>
+            <li><a href="" id="mautim">Tím</a></li>
+        </ul>
+        <div class="clearfix" id="content">
+            Lập trình web với PHP
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a").click(function(e) {
+                mau = e.target.id;
+                $("#content").addClass(mau);
+            });
+        });
+    </script>
+</body>
+</html>

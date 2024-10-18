@@ -1,0 +1,42 @@
+.cleafix {
+    clear: both;
+    overflow: hidden;
+}
+
+#main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+#main ul li a {
+    display: block;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 8px 20px;
+    text-decoration: none;
+    background: #d2d3d5;
+    color: #000;
+}
+
+.selected {
+    background: #782a90 !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
+
+#content {
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 300px;
+    margin-top: -1px;
+    padding: 5px 10px;
+}

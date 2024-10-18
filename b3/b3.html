@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b3.css">
+</head>
+<body>
+    <div id="main">
+        <div id="image">
+            <img src="../img/Fall-beautiful.png" alt="">
+        </div>
+        <div id="thum">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="../img/Fall-beautiful.png" alt="" class="activated">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="../img/maxresdefault.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="../img/nature-spring-2014-11.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="../img/nature-wallpapers-11.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="../img/Nature-Water-Wallpapers-20.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="../img/perma-glory.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            $("a>img").click(function(event) {
+                img = $(this).attr("src");
+                $("#image>img").attr( {
+                    "src": img
+                });
+                $("a>img").removeClass("activated");
+                $(this).addClass("activated");
+            });
+        });
+    </script>
+</body>
+</html>
